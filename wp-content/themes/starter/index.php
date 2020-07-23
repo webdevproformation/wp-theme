@@ -14,10 +14,10 @@
                 <a href="<?php bloginfo("url") ?>" class="nav-link">Accueil</a>
             </li>
             <li class="nav-item"> 
-                <a href="#" class="nav-link">Présentation</a>
+                <a href="<?php echo get_page_link(5) ?>" class="nav-link">Présentation</a>
             </li>
             <li class="nav-item"> 
-                <a href="#" class="nav-link">Contact</a>
+                <a href="<?php echo get_page_link(7) ?>" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>

@@ -421,7 +421,45 @@ dans le menu du BO => Réglages > Général
 
 ---------------------------
 
+créer deux pages dans le back office => 
 
+contact 
+
+présentation 
+
+liaison entre la page contact dans le back office avec le lien 
+dans le fron office 
+
+=> 1 ajouter le lien dans la barre de menu 
+
+url de la page d'accueil => bloginfo("url") ;
+
+url d'une page particulière dans mon site 
+
+get_page_link() => permet de récupérer l'url d'une page créée dans le bo 
+=> get_page_link(7) (le numéro de la page est dans l'url)
+=> url de la page contact 
+
+=> get_page_link(5) => url de la page de présentation  
+
+modifier mon fichier index.php => remplacer les # par cette fonction 
+
+menu est dynamique => correspond bien à ce que l'on fait comme actions
+dans le back office
+
+=> 2 associer à chaque page un template 
+
+nouvelles page pour fichier de thème  (dans le dossier starter)
+
+tpl-contact.php 
+
+tpl-presentation.php 
+
+
+
+-----------
+
+=> récupérer le menu 
 
 
 
