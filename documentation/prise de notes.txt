@@ -363,6 +363,23 @@ get_header() et get_footer() sont des fonctions de wordpress
 
 en PHP == require() à la sauce wordpress
 
+---------------------
+
+lorsque l'on est connecté au back office 
+
+=> bande noire qui est affiché en haut de vos pages dans le front 
+=> barre des raccourcis 
+
+
+http://localhost/theme/wp-admin/
+
+POur que le theme => starter fonctionne il faut l'activer dans le back office 
+
+dans le fichier header.php => <?php wp_head() ?> avant 
+la balise fermante </head> 
+
+dans le fichier footer.php => <?php wp_footer() ?> 
+avant la balise fermante </body>
 
 
 
