@@ -319,6 +319,27 @@ créer le fichier header.php
 ce fichier qui sera appelé par la fonction get_header() 
 dans le fichier index.php 
 
+----------------------
+
+git => versionning => garder des versions de notre code source
+sans avoir copier des dossiers 
+aujourd'hui
+demain
+après
+=> un seul endroit => dans le dossier .git
+
+avant de lancer le versionning 
+créer un fichier .gitignore => créer à la main 
+
+?? fichier permet de restreindre le partage == 
+jamais je ne vais modifier le contenu des dossiers suivants :
+wp-admin 
+wp-includes 
+
+je te liste ce que je veux partager 
+dans .gitignore on dit ce que l'on ne veut pas et met des exceptions
+
+
 
 
 

@@ -4,5 +4,4 @@
     <p class="bg-success">un paragraphe ...</p>
 </div>
 
-
 <?php get_footer() ?> <!-- ajouter la fin de la page html -->
