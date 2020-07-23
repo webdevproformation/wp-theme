@@ -339,6 +339,33 @@ wp-includes
 je te liste ce que je veux partager 
 dans .gitignore on dit ce que l'on ne veut pas et met des exceptions
 
+----------------------------
+
+modifier le pied de page de notre site wp 
+
+get_footer() => appeler le pied page de notre site 
+
+dans le dossier starter nous allons un nouveau fichier 
+
+footer.php 
+
+</body>
+</html>
+
+
+appeler le fichier index.php 
+	get_header() => charger le fichier header.php 
+
+	votre html
+
+	get_footer() => charger le fichier footer.php 
+
+get_header() et get_footer() sont des fonctions de wordpress 
+
+en PHP == require() à la sauce wordpress
+
+
+
 
 
 
