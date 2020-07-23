@@ -490,7 +490,56 @@ tpl-contact.php
 
 => rendre le menu 100% dynamique !! 
 
+----------------------------------
+
 => Loop (boucle wordpress) 
+
+1 connexion à la BDD via PDO 
+en PHP => fonction requête dans la base de données
+
+si je suis sur la page n° 9 => requête SQL 
+
+2 SELECT titre , contenu , auteur FROM articles WHERE id = 9 
+
+=> résultat =>  tableau php
+
+3 $resultat = [
+	"titre" => "Information" ,
+	"contenu" => "un peu de texte ...",
+	"auteur" => "Malik"
+];
+
+4 <h1><?php echo $resultat["titre"] ?></h1>
+<p><?php  echo $resultat["contenu"] ?></p>
+<ul>
+	<li><?php echo $resultat["auteur"] ?></li>
+</ul>
+
+--- équivalent dans WP ---
+
+pas besoin de faire la partie connexion / partie requête 
+
+have_posts()
+the_post()
+
+=> boucle Wordpress
+
+deux fonctions wordpress => connexion à la base de données / requête / résultat
+
+il nous reste 1 étape important => insérer les informations dans du html !!!
+
+=> dans le fichier tpl-information.php
+
+
+
+
+
+
+
+
+
+
+
 
 
 
