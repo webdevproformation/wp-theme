@@ -394,6 +394,36 @@ Contact
 => barre de menu 
 
 
+-----------------------------
+
+je viens de finir de coder ma barre de menu 
+
+=> rendre dynamique ??? 
+
+=> récupérer des contenus qui ont été créé dans le back office
+
+=> 1ère élément à récupérer => vrai nom de mon site  
+=> back office > Réglages > Générale
+
+afficher dans le barre de menu le texte qui est écrire dans le champ titre du site 
+
+<?php bloginfo("name") ?>  => liaison entre le bo et fo
+
+=> dans site qui central pour savoir coder sur wordpress 
+
+codex wordpress => https://wordpress.org/support/
+Codex => Léonard de Vinci carnet de note le Codex 
+
+la fonction wp bloginfo()
+
+permet de récupérer des informations qui sont enresgistrés
+dans le menu du BO => Réglages > Général 
+
+---------------------------
+
+
+
+
 
 
 
