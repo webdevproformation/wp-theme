@@ -462,6 +462,38 @@ tpl-presentation.php
 => récupérer le menu 
 
 
+-------------------
+
+Cas pratique :
+
+1 Dans le backoffice créer une nouvelle page => Information 
+	titre Information
+	contenu un peu de texte ...
+
+2 ajouter un lien dans la barre de menu pointer vers la page Information 
+
+3 créer un template utilisé uniquement pour la page information 
+
+a appeler le header et le footer 
+b afficher le texte suivant 
+c Toutes les informations sur mon activité de développeur 
+
+4 associer ce template à la page information dans le back office  
+
+Theme = somme de template 
+index.php => 
+header.php
+footer.php partie de template 
+tpl-contact.php 
+
+
+
+
+
+
+
+
+
 
 
 
