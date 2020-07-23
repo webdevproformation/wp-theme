@@ -486,6 +486,13 @@ header.php
 footer.php partie de template 
 tpl-contact.php 
 
+=> dynamique => mais c'est pas mal !!!!
+
+=> rendre le menu 100% dynamique !! 
+
+=> Loop (boucle wordpress) 
+
+
 
 
 

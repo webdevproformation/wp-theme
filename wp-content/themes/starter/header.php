@@ -28,6 +28,9 @@
             <li class="nav-item"> 
                 <a href="<?php echo get_page_link(7) ?>" class="nav-link">Contact</a>
             </li>
+            <li class="nav-item"> 
+                <a href="<?php echo get_page_link(9) ?>" class="nav-link">Information</a>
+            </li>
         </ul>
     </nav>
 </div>
