@@ -542,6 +542,33 @@ récupérer le titre de la page
 
 ainsi que son contenu
 
+-------------------
+
+comme vous le savez certainement 
+wordpress dispose d'un système interne pour générer des menus 
+
+nous avons fait c'est créer la barre de menu 
+
+=> système interne de wordpress pour créer des menus 
+
+2 étapes :
+
+Etape 1 => créer un nouveau fichier 
+ functions.php
+
+ fichiers de template mais qui n'est pas affiché à l'écran !!! 
+
+ ce fichier va permettre de stocker des fonctions centrales de notre thème 
+
+ ce fichier est exécuté AVANT l'exécution de nos fichiers de templates 
+
+dans ce fichier 
+
+register_nav_menu([
+    "theme_location" => "top"
+]);
+
+
 
 
 
