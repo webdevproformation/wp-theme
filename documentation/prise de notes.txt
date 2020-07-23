@@ -367,7 +367,7 @@ en PHP == require() à la sauce wordpress
 
 lorsque l'on est connecté au back office 
 
-=> bande noire qui est affiché en haut de vos pages dans le front 
+=> il y a une bande noire qui est affichée en haut de vos pages dans le front 
 => barre des raccourcis 
 
 
@@ -380,6 +380,26 @@ la balise fermante </head>
 
 dans le fichier footer.php => <?php wp_footer() ?> 
 avant la balise fermante </body>
+
+-----------------------------
+
+essayer ensemble de faire un petit site internet :
+
+arborescence => la liste des pages de notre site 
+
+Accueil 
+Présentation 
+Contact 
+
+=> barre de menu 
+
+
+
+
+
+
+
+
 
 
 
