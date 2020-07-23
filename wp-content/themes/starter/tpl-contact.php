@@ -6,7 +6,16 @@ Template Name: contact
 
 <?php get_header() ?>
 
-page de contact
+<div class="container">
+<?php  while ( have_posts()) { ?>
+    <?php the_post();  ?>
+
+    <h1><?php the_title() ?></h1>
+    <div><?php the_content() ?></div>
+
+<?php } ?>
+</div>
+
 
 <?php get_footer() ?>
 

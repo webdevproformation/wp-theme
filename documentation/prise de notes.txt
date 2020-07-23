@@ -530,8 +530,17 @@ il nous reste 1 étape important => insérer les informations dans du html !!!
 
 => dans le fichier tpl-information.php
 
+-------------------
 
 
+Cas pratique
+dans le template tpl-contact.php 
+
+lancer une boucle wp 
+
+récupérer le titre de la page
+
+ainsi que son contenu
 
 
 

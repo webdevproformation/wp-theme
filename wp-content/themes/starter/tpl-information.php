@@ -14,7 +14,9 @@ Template Name: information
         //echo "<pre>";
 
         //var_dump($post->post_title);
-        the_title();
+        echo wp_strip_all_tags(get_the_title());
+        // sécurité information et injection XSS ???? injection de javascript 
+
         //echo "<br>";
         //var_dump($post->post_content);
         the_content();
