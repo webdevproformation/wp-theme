@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css" />
+    <style>
+        #menu{
+            position: relative;
+            z-index: 9999;
+
+        }
+        .section{
+            height: 400px;
+        }
+
+        .section-1{
+            background: #838383;
+        }
+        .section-2{
+            background: #ad9d9d;
+        }
+
+        .section-3{
+            background: #d9adad;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- https://alvarotrigo.com/pagePiling/ CTRL + U -->
+        <header>
+            <!-- menu -->
+            <ul id="menu">
+                <li data-menuanchor="presentation"><a href="#presentation">Présentation</a>  </li>
+                <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                <li data-menuanchor="map"><a href="#map">Google Map</a></li>
+            </ul>
+        </header>
+        <div id="pagepiling">
+            <!-- contenu de la page -->
+            <section class="section section-1" id="presentation">
+                <h1>Présentation</h1>
+            </section>
+            <section class="section section-2" id="contact">
+                <h1>Contact</h1>
+            </section>
+            <section class="section section-3" id="map">
+                <h1>Google Map</h1>
+            </section>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+            menu :'#menu' ,
+            anchors: ['presentation', 'contact', 'map']
+         });
+        });
+    </script>
+</body>
+</html>

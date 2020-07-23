@@ -1,0 +1,366 @@
+Wordpress => codage de théme
+
+url : https://formation.webdevpro.net/wordpress-dev/
+login : wp
+mdp : wp
+
+1 ne pas mettre d'adresse dans Google, directement dans 
+la barre d'adresse du navigateur
+
+2 saisir les login et mot de passe en minuscule 
+
+-----------------------
+
+ouvrir un github pour partager le code
+(sera ouvert par la suite)
+
+pas encore ouvert le github => je donne l'adresse
+pour aprés la pause de 10h
+
+-----------------------
+
+Objectif => rentrer dans les détails dans Wordpress
+comment wordpress gére la partie Front du site internet
+voir des fonctions de Worpdress qui permettre de récupérer
+des informations qui ont été saisie dans le Back Office
+
+-----------------------
+
+=> vous avez eu une formation sur WP
+
+
+Le chapitre 1 et 2 quelques rappels pour voir :
+- qu'est ce que wordpress ?
+- install wordpress ???
+- utilisation du back office 
+
+=> la création de théme !
+
+-----------------------
+
+Support est dispo é l'adresse suivante :
+
+https://formation.webdevpro.net/wordpress-dev/
+login : wp
+mdp : wp
+
+
+-----------------------
+
+Est ce que vous avez un hébergement ?
+
+=> dorando
+=> jury devoir présenter un site internet
+EN LIGNE (sur internet)
+
+Acheter (é tes frais)
+=> nom de domaine => mon-super-site.fr
+=> hébergement => ordinateur allumé 24h/24 7j/7
+
+
+Doranco a négocié auprés d'une société => phpnet.org
+forfait spécial pour 15 é / an TTC (paie 1 seule fois / année)
+
+https://www.phpnet.org/pack-etudiant.php
+code DORANCO20
+
+
+=> maximum 1 heure => hébergement + domaine opérationnel
+
+
+-------------------
+
+Mettre en ligne 
+=> Menu Dashboard phpnet.org => générer la mise en ligne
+	créer une bdd
+	générer https
+	modifier tes mots de passes
+	créer des boitemails
+	créer des sous domaines
+
+	=> symfony 
+	=> (invite de commande => composant / bundle)
+	=> invite de commande EN LIGNE => ssh 
+	=> https://openclassrooms.com/fr/courses/3619856-developpez-votre-site-web-avec-le-framework-symfony/3626076-utiliser-la-console-directement-depuis-le-navigateur
+	=> https://openclassrooms.com/fr/courses/3619856-developpez-votre-site-web-avec-le-framework-symfony/3626249-deployer-son-site-symfony-en-production
+
+=> logiciel FileZilla 
+
+cas pratique d'un
+Mise en ligne !
+
+quelquesoit la technologie que vous allez choisir
+
+OBLIGATOIRE
+
+=> hébergement + domaine
+=> Filezilla
+
+html css javascript => OBLIGATOIRE
+
+wordpress => OBLIGATOIRE + mettre en place une base de données
+	sur hébergeur
+
+symfony => OBLIGATOIRE + base de données + module créer une 
+	invite de commande via le navigateur
+
+react => OBLIGATOIRE (build é mettre sur votre hébergeur) 
+
+--------------------------
+
+=> début aprés midi demain 
+html / css
+wordpress 
+
+--------------------------
+
+installer wordpress en local 
+
+=> dans le chapitre 2 
+https://formation.webdevpro.net/wordpress-dev/01-install-local.html
+
+?? Windows => WAMP / XAMPP /EasyPHP
+(vous ne pouvez pas démarrer WAMP et XAMPP simultanément
+c'est soit l'un soit l'autre)
+
+?? MacOS => MAMP
+
+Si c'est déjé installé 
+
+Démarrer votre serveur local 
+Démarrer les services MySQL / Apache
+
+--------------------------
+
+préparer l'installation de wordpress sur mon serveur local
+
+windows => http://localhost/phpmyadmin/ (phpmyadmin)
+macos => http://localhost:8888/phpmyadmin/ (phpmyadmin)
+
+---------------------
+
+pour fonctionner wordpress EXIGE une base de données
+via phpmyadmin nous allons créer une base de données + user 
+
+Créer une base de données vide
+
+nom de la base de données : theme
+encode : utf8mb4_general_ci
+
+créer un compte utilisateur qui va accéder 
+exclusivement é la base de données theme
+
+sélectionné sur le base theme > Priviléges > 
+cliquer sur le lien Ajouter un compte utilisateur
+
+login : theme
+host : localhost
+mdp : azerty1234!
+
+systéme informatique
+
+Windows / LInux / Mac
+
+=> créer des fichiers 
+=> identifié 
+=> droit => peut voir / modifier
+supprimer (privilége)
+=> droit => intrerdire 
+de faire des actions
+
+Base de données == systéme 
+informatique
+
+
+1 projet = 1 bbd = 1 user dédié
+
+ne pas utiliser utilisateur root
+administrateur systéme
+
+=> critique lorsque l'on parle
+de 
+SECURITE 
+
+
+------------------------
+
+télécharger les sources de wordpress et les dézipper et les 
+mettre dans un 
+
+windows => c:\xampp\htdocs => 
+
+créer une bdd + user 
+télécharger et installé wp sur le c:\xampp\htdocs
+
+lancer l'installation
+
+windows : http://localhost/theme
+MacOS : http://localhost:8888/theme
+
+----------------------
+
+git push (envoyer le travail sur github)
+git clone (importer le travail)
+
+nous avons fini d'installer wordpress
+
+
+login administrateur du site :admin
+mdp  administrateur du site : admin
+
+mettre les mains DANS le code
+
+é ne pas confondre avec profil de connexion é la base 
+de données
+
+login : theme
+mdp : azerty1234!
+host : localhost
+
+=> regarder comment word est fait 
+
+Aller dans ce dossier
+windows => dossier c:\xampp\htdocs\theme
+macos => dossier /Applications/MAMP/htdocs/theme
+
+le visualiser via Visual Studio Code
+
+architecture => comment les développeurs organisent
+leurs fichiers 
+
+3 dossiers principaux
+wp-admin => l'ensemble de fichiers qui permettent
+de faire fonctionner le back office de WP
+=> pas modifier le code source dans ce fichier
+wp-content
+	=> dans ce fichier que nous allons passer 
+	=> 99.999% de notre temps
+	=> lorsque l'on veut créer un théme
+wp-includes
+	=> librairies ( => vendor dans symfony )
+	=> react (node_modules)
+	=> dossier qui contient toutes 
+	=> librairies qui permettent de faire fonctionner
+	=> wp 
+	=> pas le modifier
+	=> créer des thémes appeler des fonctions de wp
+	=> stockée dans wp-includes
+
+fichier php é la racine du projet 
+
+wp-config.php => 
+
+en PHP : (connexion é une base de donnée via PDO)
+identifiant pour se connecter à la bdd 
+
+---------------------------
+
+BO de votre wp > Apparence > thèmes 
+
+dans le dossier wp-content/themes
+
+créer un nouveau dossier => starter
+mettre le nom que vous voulez 
+espace / caratères accentués
+
+dans le dossier starter	:
+	index.php => page par défaut de notre thème
+		<h1>Hello World !</h1>
+	
+	style.css 
+	/*
+		Theme Name: starter
+	*/
+
+=> une fois que l'on a créer les fichiers de base 
+=> ACTIVER le theme starter que l'on vient de créer 
+
+
+=> si vous modifier le contenu du fichier
+index.php 
+
+essayer des balises html p , modifier le contenu de 
+la balise h1
+
+une page html qui se respecte
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	...
+</head>
+<body>
+	.... => ici que l'on doit voir ce qui est écrit dans index.php
+</body>
+</html>
+
+ajouter le head et la fin de page dans  
+
+<?php get_header() ?> => function de wordpress 
+
+<?php get_footer() ?> => function de wordpress
+
+ils sont générés par défaut par wordpress !
+
+nous allons vouloir avoir une maitrise sur 
+le contenu de la partie head de notre site 
+
+mais aussi maitrise de la partie pied de page 
+de notre site
+
+=> je veux installer bootstrap 
+
+<link href="url de la librairie .." > 
+
+dans le dossier starter 
+
+créer le fichier header.php 
+
+ce fichier qui sera appelé par la fonction get_header() 
+dans le fichier index.php 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
