@@ -71,7 +71,8 @@
                     <?php the_post_thumbnail('medium' , ["class" => "img-fluid"]) ?>
                 </a>
 
-                <div class="card-text"><?php the_content() ?></div>
+                <div class="card-text"><?php the_excerpt() ?></div>
+                <!-- dans le fichier home => remplacer the_content() par the_excerpt() => extrait -->
                 <!-- autre fonction que l'on doit utiliser DANS la boucle WP
                     the_permalink()
                     https://getbootstrap.com/docs/4.5/components/buttons/#outline-buttons

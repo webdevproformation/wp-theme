@@ -21,3 +21,10 @@ function starter_support(){
     add_theme_support( 'post-thumbnails' );
   }
 add_action( 'after_setup_theme', 'starter_support' );
+
+// paramétrer l'extrait dans la home
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 10;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
