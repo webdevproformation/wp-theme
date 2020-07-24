@@ -570,6 +570,61 @@ register_nav_menu([
 
 
 
+---------------------
+
+Applications mobiles
+
+=> Langages dédiés : 
+C++ SWIFT JAVA KOTLIN 
+
+Framework : 
+React 
+React Native / Ionic / .... Wordpress plugin en App Mobile 
+
+https://programmation.developpez.com/actu/291204/Quels-sont-les-meilleurs-langages-de-programmation-pour-developper-une-application-mobile-Petit-tour-d-horizon-sur-les-plus-populaires/
+
+
+Javascript => React Native (traduction)
+
+Android => (Java)
+Mac OS => SWIFT
+
+------------------------------
+
+https://formation.webdevpro.net/wordpress-dev/
+login : wp 
+mdp : wp
+
+
+------------------------------
+
+canvas => https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ
+
+
+------------------------------
+
+relancer votre serveur local 
+
+Windows XAMPP
+MacOS MAMP
+
+Lancer vos services : Apache et mySQL 
+
+Lancer votre navigateur 
+WIndows http://localhost/theme
+MacOS http://localhost:8888/theme
+
+accéder au back office 
+
+WIndows http://localhost/theme/wp-login.php
+WIndows http://localhost/theme/wp-admin
+
+MacOS http://localhost:8888/theme/wp-login.php
+MacOS http://localhost:8888/theme/wp-admin
+
+Compte administrateur :
+login : admin
+mdp : admin
 
 
 
