@@ -38,6 +38,11 @@
             <article class="card p-3">
                 <h2 class="card-title"><?php the_title() ?></h2>
                 <div class="card-text"><?php the_content() ?></div>
+                <!-- autre fonction que l'on doit utiliser DANS la boucle WP
+                the_permalink()
+                https://getbootstrap.com/docs/4.5/components/buttons/#outline-buttons
+            -->
+                <a href="<?php the_permalink() ?>" class="btn btn-outline-primary">lire la suite ...</a>
             </article>
         </div>
     <?php } ?>
