@@ -36,7 +36,17 @@
         <!-- </pre> -->
         <div class="col-3">
             <article class="card p-3">
+
                 <h2 class="card-title"><?php the_title() ?></h2>
+
+        <!-- ajouter une image entre le titre et le contenu 
+        => image à la une 
+        => image qui représente le contenu de l'article 
+        => activer dans le fichier functions.php la capacité pour les articles d'avoir une image à la une 
+        add_theme_support( 'post-thumbnails' );
+    -->
+                <?php the_post_thumbnail('post-thumbnail' , ["class" => "img-fluid"]) ?>
+
                 <div class="card-text"><?php the_content() ?></div>
                 <!-- autre fonction que l'on doit utiliser DANS la boucle WP
                 the_permalink()
