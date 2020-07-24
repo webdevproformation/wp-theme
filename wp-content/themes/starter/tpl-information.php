@@ -27,6 +27,7 @@ Template Name: information
 
                 the_date();
                 // echo "</pre>";
+               edit_post_link('Modifier article',"<div class='btn btn-success '>","</div>",$post) ;
             } ?>
         </div>
         <div class="col-4">
