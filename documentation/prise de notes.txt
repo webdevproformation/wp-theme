@@ -626,6 +626,39 @@ Compte administrateur :
 login : admin
 mdp : admin
 
+// le github https://github.com/webdevproformation/wp-theme
+
+
+------------------------
+
+wp dispose de plein de fonction pour réaliser rapidement thème 
+
+get_header() get_footer()
+wp_head() wp_footer()
+bloginfo("name | description | url");
+get_page_link(5) => url de page 
+
+boucle 
+appelle une page dans wordpress 
+wp va généré une requête en bdd 
+pour récupérer les données et les afficher 
+have_posts()
+the_post()
+the_title()
+the_content()
+the_date()
+the_author()
+
+dans WP => dispose d'un menu (qu'il faut activer) pour créer des barres de menu facilement 
+
+register_nav_menu("theme_location" , "top");
+active le menu dans le back office 
+
+Afficher le menu dans une des parties du thème 
+wp_nav_menu(["menu" => "top"  ]);
+
+
+
 
 
 
