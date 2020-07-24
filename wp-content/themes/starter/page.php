@@ -8,7 +8,7 @@
         <?php the_post() ?>
             <div class="col-3">
                 <?php  if( has_post_thumbnail() ){ ?>
-                 <?php the_post_thumbnail("large" , ["class" => "img-fluid img-thumbnail"]); ?>
+                    <?php the_post_thumbnail("large" , ["class" => "img-fluid img-thumbnail"]); ?>
                 <?php } else { ?>
                     <p>Aucune image à la Une disponible</p>
                 <?php } ?>
