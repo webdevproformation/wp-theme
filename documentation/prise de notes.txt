@@ -740,7 +740,7 @@ page seule
 			Template Name: fpejfpeoijfzeopi
 			*/
 		?>
-		
+
 		page.php 
 
 	Article 
@@ -749,6 +749,22 @@ page seule
 Erreur (la page n'existe pas) 404.php 
 
 Page d'accueil => home.php 
+
+
+----------------------------
+
+créer une nouveau fichier de template 
+
+single.php 
+
+appeler le header et le footer 
+
+afficher le titre             |
+le contenu                    |      image la une de l'article
+date                          |
+
+
+
 
 
 
