@@ -19,18 +19,27 @@
             </small>
         </a>
         <ul class="navbar-nav">
-            <li class="nav-item"> 
-                <a href="<?php bloginfo("url") ?>" class="nav-link">Accueil</a>
-            </li>
-            <li class="nav-item"> 
-                <a href="<?php echo get_page_link(5) ?>" class="nav-link">Présentation</a>
-            </li>
-            <li class="nav-item"> 
-                <a href="<?php echo get_page_link(7) ?>" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item"> 
-                <a href="<?php echo get_page_link(9) ?>" class="nav-link">Information</a>
-            </li>
+            <?php  $menu = wp_get_nav_menu_items("info"); ?>
+            <?php foreach($menu as $item){ ?>
+                <li class="nav-item"> 
+                <a href="<?php echo $item->url ?>" class="nav-link">
+                    <?php echo $item->title ?>
+                </a>
+                </li>
+            <?php } ?>
         </ul>
+         <!--    <li class="nav-item"> 
+                <a href="<?php //bloginfo("url") ?>" class="nav-link">Accueil</a>
+            </li>
+            <li class="nav-item"> 
+                <a href="<?php //echo get_page_link(5) ?>" class="nav-link">Présentation</a>
+            </li>
+            <li class="nav-item"> 
+                <a href="<?php //echo get_page_link(7) ?>" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item"> 
+                <a href="<?php //echo get_page_link(9) ?>" class="nav-link">Information</a>
+            </li> -->
+        
     </nav>
 </div>
