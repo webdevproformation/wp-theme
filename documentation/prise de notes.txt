@@ -765,7 +765,34 @@ date                          |
 
 
 
+----------------------------
 
+Thème enfant ! 
+
+Allez dans le back office => Apparence Thème > activer 2020 TwentyTwenty 
+
+j'adore ce thème MAIS je n'aime pas UNIQUEMENT la page d'accueil 
+
+=> je ne veux pas tout recoder
+
+=> Thème enfant utiliser tous les fichiers de thème de TwentyTwenty  et modifier 1 seul fichier 
+
+créer un dossier dans le dossier themes
+mon-twentytwenty
+
+dans le dossier que je viens de créer => créer un fichier style.css 
+
+/*
+    Theme Name: Mon Twenty Twenty
+    Template: twentytwenty
+*/
+
+le thème que l'on vient de créer est utilisent 100% des fichiers du thème parent 
+
+surcharger 
+modifier un des fichiers de modèle
+
+dans le dossier mon-twentytwenty créer un fichier index.php
 
 
 
