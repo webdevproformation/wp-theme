@@ -10,18 +10,38 @@
     the_post()
 -->
 
+<!--
+    lorsque vous êtes sur le fichier home.php 
+    la fonction the_post() 
+    retourner => pas 1 article mais la liste des derniers articles
+    dans la page home.php the_post renvoie un tableau deux objets wp_post !!!!
+    créer un deuxième article dans le back office
+
+-->
+
 <?php get_header() ?>
 
 <div class="container">
 
     <h1>Page d'accueil du site </h1>
 
+    <div class="row">
     <?php while ( have_posts() ){ ?>
         <?php  the_post() ?>
-        <pre>
-            <?php var_dump($post) ?>
-        </pre>
+        <!-- <pre> -->
+            <?php // var_dump($post) ?>
+        <!-- composant card => bordure joli 
+        https://getbootstrap.com/docs/4.5/components/card/
+    -->
+        <!-- </pre> -->
+        <div class="col-3">
+            <article class="card p-3">
+                <h2 class="card-title"><?php the_title() ?></h2>
+                <div class="card-text"><?php the_content() ?></div>
+            </article>
+        </div>
     <?php } ?>
+    </div>
 </div>
 
 <?php get_footer() ?>
