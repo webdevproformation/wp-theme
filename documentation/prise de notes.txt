@@ -631,7 +631,7 @@ mdp : admin
 
 ------------------------
 
-wp dispose de plein de fonction pour réaliser rapidement thème 
+wp dispose de plein de fonctions pour réaliser rapidement thème 
 
 get_header() get_footer()
 wp_head() wp_footer()
@@ -656,6 +656,50 @@ active le menu dans le back office
 
 Afficher le menu dans une des parties du thème 
 wp_nav_menu(["menu" => "top"  ]);
+
+------
+
+cas pratique  
+
+dans la page information ajouter une barre de menu 
+qui va contenir des liens vers les pages suivantes :
+
+- Accueil 
+- Politique de confidentialité 
+
+créer une nouvelle nouvelle barre de menu => 
+register_nav_menu("theme_location" , "information"); 
+
+mais étant donné que j'ai déjà utilisé cette fonction
+
+register_nav_menus([
+	"top" => "Menu Principal",
+	"info" => "Menu dédié à la page info"
+])
+
+cette ligne de code doit être écrite OBLIGATOIREMENT dans le fichier functions.php 
+
+=> comment mettre en forme la page confidentialité 
+
+-----------------------
+
+Cas pratique
+
+1 Créer une nouvelle page mentions légales ( dans le back office ) + mettre un peu de texte 
+
+2 affiché dans la barre de menu situé dans le pied de page du site 
+
+3 aspect visuel suivant 
+
+<h1>titre de la page </h1> 
+hr 
+div
+	div 
+		Contenu 
+	div 
+		date + nom de l'auteur
+
+
 
 
 
