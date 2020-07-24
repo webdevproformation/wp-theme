@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100%;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .zone-gauche{
+            height: 100vh;
+            background: #be5683;
+            width: 50%;
+            transition: 3s transform;
+        }
+
+       /*  .zone-gauche:hover{
+            transform: translateX(-500px);
+        } */
+
+        .zone-droite{
+            height: 100vh;
+            background: #848ccf;
+            width: 50%;
+            transition: 3s transform;
+           
+        }
+        /* .zone-droite:hover{
+            transform: translateX(500px);
+        } */
+
+        button{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="zone-gauche"></div>
+        <div class="zone-droite"></div>
+        <button>animation</button>
+    </div>
+
+
+<script>
+    document.querySelector("button").addEventListener("click", function(){
+        setTimeout( function(){
+            document.location.href = "https://www.google.fr/";
+        }, 3000);
+        
+        document.querySelector(".zone-gauche").style['transform'] = "translateX(-1500px)";
+        document.querySelector(".zone-droite").style['transform'] = "translateX(1500px)";
+        this.style['display'] = "none";
+
+       
+    })
+
+</script>
+
+</body>
+</html>

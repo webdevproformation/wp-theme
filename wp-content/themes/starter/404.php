@@ -8,7 +8,7 @@
 
 <div class="container text-center">
     <h1 class="display-3">404</h1>
-    <p>Pas introuvable</p>
+    <p>Page introuvable</p>
 </div>
 
 <?php get_footer() ?>
