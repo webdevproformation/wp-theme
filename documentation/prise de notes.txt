@@ -699,6 +699,58 @@ div
 	div 
 		date + nom de l'auteur
 
+-----------------------
+
+important comment coder des thèmes 
+
+=> template hierarchie !
+
+chapitre 3 => template hierarchie > schema 
+https://formation.webdevpro.net/wordpress-dev/01-tpl-hierarchy.html
+
+schema => 
+
+schéma central 
+
+wordpress va automatique liaison entre un fichier de thème <=> un type de contenu créé dans le back office
+
+Quel type de contenu peut on créer dans le back office de wordpress ???? 
+
+4 types principaux 
+Article 
+Page => nous avons surtout créé des Pages 
+Catégorie
+Etiquette 
+
+En fonction du type de contenu que l'on veut présenter dans le front 
+
+Wordpress va lier un template spécial 
+
+Le schéma que je viens de vous montrer explique quel template va être associé à quel type de contenu 
+(template hiérarchie)
+
+page archives => 
+
+page qui fait la liste de tous mes articles => page category.php 
+
+page seule
+	Page 
+		<?php 
+			/*
+			Template Name: fpejfpeoijfzeopi
+			*/
+		?>
+		
+		page.php 
+
+	Article 
+		single.php ou single-post.php 
+
+Erreur (la page n'existe pas) 404.php 
+
+Page d'accueil => home.php 
+
+
 
 
 
