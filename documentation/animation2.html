@@ -46,18 +46,24 @@
            animation 
            */
           animation: .4s jump ease infinite alternate ;
+          transition: 1s opacity;
+        }
+
+        .img1.hide{
+            opacity: 0;
+            pointer-events: none;
         }
           /*
           suite animation img1
           */
         @keyframes jump{
             0%{
-                transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%)  scale(1) ;
                 box-shadow: 0 1px 2px rgba(0,0,0,0,0.15);
             }
             
             100%{
-                transform: translate(-50%, -50%) scale(1.05);
+                transform: translate(-50%, -50%)  scale(1.05) ;
                 box-shadow: 0 4px 20px rgba(0,0,0,0,0.1);
             }
         }
@@ -75,9 +81,8 @@
          <!--<div class ="rose"></div>-->
          <canvas class="canvas 2d"></canvas>
          
-         
          <div class="sakura">
-                  <img src="https://pixabay.com/get/57e0dd474a5aae14f6d1867dda35367b1c3adbe156567740_1920.jpg" alt="">                   <!--<img  src="https://pixabay.com/get/57e2d7464b5aaa14f6d1867dda35367b1c3adbe157567141_1920.jpg"                     alt="">-->
+                <img src="https://pixabay.com/get/57e0dd474a5aae14f6d1867dda35367b1c3adbe156567740_1920.jpg" alt="">
          </div>
          
          <img class="img1" src="https://source.unsplash.com/300x300" alt="">
@@ -98,9 +103,12 @@
         
         document.querySelector(".canvas").style['transform'] = "translateX(-1500px)";
         document.querySelector(".sakura").style['transform'] = "translateX(1500px)";
-        this.style['opacity'] = 0;
-        
-    });
+        this.classList.add("hide");
+
+        setTimeout( function(){
+            document.location.href = "animation.html";
+        }, 3000)
+});
 
 </script>
 </body>
