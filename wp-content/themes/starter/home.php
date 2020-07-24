@@ -45,7 +45,9 @@
         => activer dans le fichier functions.php la capacité pour les articles d'avoir une image à la une 
         add_theme_support( 'post-thumbnails' );
     -->
-                <?php the_post_thumbnail('post-thumbnail' , ["class" => "img-fluid"]) ?>
+                <a href="<?php the_permalink() ?>">
+                    <?php the_post_thumbnail('medium' , ["class" => "img-fluid"]) ?>
+                </a>
 
                 <div class="card-text"><?php the_content() ?></div>
                 <!-- autre fonction que l'on doit utiliser DANS la boucle WP

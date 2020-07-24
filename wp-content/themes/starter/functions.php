@@ -6,10 +6,10 @@
 //register_nav_menu("theme_location" , "information");
 
 
-    register_nav_menus([
-        "top" => "Menu Principal",
-        "info" => "Menu dédié à la page info"
-    ]);
+register_nav_menus([
+    "top" => "Menu Principal",
+    "info" => "Menu dédié à la page info"
+]);
 
 
 // BO > Apparence > Menus 
@@ -17,4 +17,7 @@
 
 // activer la capacité du thème à gérer les images à la une
 
-add_theme_support( 'post-thumbnails' );
+function starter_support(){
+    add_theme_support( 'post-thumbnails' );
+  }
+add_action( 'after_setup_theme', 'starter_support' );
